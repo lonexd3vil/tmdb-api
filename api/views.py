@@ -6,7 +6,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 # tmdb helper vars
 tmdb = TMDb()
-tmdb.api_key = '8481eb365dfb99e31bc7f845e14d8c46'
+tmdb.api_key = 'YOUR_API_KEY'
 tmdb.debug = True
 tmdbImgSourceHD = "https://image.tmdb.org/t/p/w780"
 tmdbImgSourceSD = "https://image.tmdb.org/t/p/w500"
