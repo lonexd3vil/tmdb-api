@@ -29,3 +29,6 @@
 <p><code>/api/tv/videos/tmdbid/season/int</code>will load all the videos available to the corrosponding tv show's season</p>
 <p><code>/api/tv/images/tmdbid/season/int</code>will load all the images available to the corroponsindg tv show's season</p>
 <p><code>/api/person/id</code>will load details regarding the given actor id</p>
+
+# Requirments
+<p>just run <code>pip install -r requirements.txt</code>and it will setup all the neccasary modules</p>
