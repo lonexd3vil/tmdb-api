@@ -19,4 +19,13 @@
 <p><code>/api/search/query/</code>will search for movies and series both based on the given query</p>
 <p><code>/api/search/query/page/int/</code>will search for movies and series both based on the given query and based on given page number, thus allowing for a multi-page search</p>
 <p><code>/api/genres/</code>this will get a list of genres available on tmdb along with genre id</p>
-
+<p><code>/api/tv/</code>will load TV Shows based on popularity in an desending order</p>
+<p><code>/api/tv/popular/</code>will load popular TV Shows</p>
+<p><code>/api/tv/toprated/</code>will load Top-Rated TV Shows</p>
+<p><code>/api/tv/ongoing/</code>will load On-Going TV Shows</p>
+<p><code>/api/tv/tmdbid/</code>will load TV Show based on id</p>
+<p><code>/api/tv/tmdbid/season/int</code>will load complete season based on the given TV show id</p>
+<p><code>/api/tv/tmdbid/season/int/episode/int</code>will load the specified episode corrosponding to the season and the given TV show id</p>
+<p><code>/api/tv/videos/tmdbid/season/int</code>will load all the videos available to the corrosponding tv show's season</p>
+<p><code>/api/tv/images/tmdbid/season/int</code>will load all the images available to the corroponsindg tv show's season</p>
+<p><code>/api/person/id</code>will load details regarding the given actor id</p>
