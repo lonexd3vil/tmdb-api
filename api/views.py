@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from .tmdbv3api import TMDb, Movie, Search, Season, Trending, Company, Configuration, Discover, Genre, TV, Person
+from tmdbv3api import TMDb, Movie, Search, Season, Trending, Company, Configuration, Discover, Genre, TV, Person
 import requests
 import pprint
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 # tmdb helper vars
 tmdb = TMDb()
-tmdb.api_key = 'YOUR_API_KEY'
+tmdb.api_key = '8481eb365dfb99e31bc7f845e14d8c46'
 tmdb.debug = True
 tmdbImgSourceHD = "https://image.tmdb.org/t/p/w780"
 tmdbImgSourceSD = "https://image.tmdb.org/t/p/w500"
