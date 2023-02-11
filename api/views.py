@@ -153,7 +153,10 @@ def getCasts(tmdb_id):
     castData = []
     for i in range(len(m.casts['cast'])):
         casts = {}
+        # print(m.casts['cast'])
+        # input()
         ytt = dict(m.casts['cast'][i])
+        casts['actor_id'] = ytt['id']
         casts['adult'] = ytt['adult']
         casts['gender_id'] = ytt['gender']
         casts['cast_id'] = ytt['id']
@@ -179,6 +182,7 @@ def getCastsTV(tmdb_id):
     for i in range(len(m.credits['cast'])):
         casts = {}
         ytt = dict(m.credits['cast'][i])
+        casts['actor_id'] = ytt['id']
         casts['adult'] = ytt['adult']
         casts['gender_id'] = ytt['gender']
         casts['cast_id'] = ytt['id']
@@ -899,9 +903,6 @@ def FetchTvID(request, tmdbid):
         info['seasons'] = TVSeasonHandler(m.id)
         info['recommended_tv'] = TVRecommendations(m.id)
         info['similar_tv'] = similarTVHandler(m.id)
-        emptyDict = []
-        # emptyDict.append(vidsrcHandler(m.imdb_id))
-        info['streams_providers'] = emptyDict    
         data.append(info)
         return Response(data)
     except Exception as e:

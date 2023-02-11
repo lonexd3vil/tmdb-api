@@ -10,8 +10,8 @@ urlpatterns= [
     path('api/movies/theaters/', moviesInTheater, name="moviesInTheater"),
     path('api/movies/toprated/', apiMoviesTopRated, name="moviesTopRated"),
     path('api/movies/upcoming/', apiMoviesUpcoming, name="moviesUpcoming"),
-    path('api/movies/<int:tmdbid>', FetchMovieID, name="FetchMovieID"),
-    path('api/movies/search/<str:query>', searchMoviesTitle, name="searchMoviesTitle"),
+    path('api/movies/<int:tmdbid>/', FetchMovieID, name="FetchMovieID"),
+    path('api/movies/search/<str:query>/', searchMoviesTitle, name="searchMoviesTitle"),
     # production company endpoint
     path('api/company/<int:id>', getCompany, name="getCompany"),
     # queries endpoints
