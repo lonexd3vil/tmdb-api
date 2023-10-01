@@ -21,7 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "vidsrc_api/wsgi.py"
+        "dest": "tmdb_api/wsgi.py"
       }
     ]
   }
